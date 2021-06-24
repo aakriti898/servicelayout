@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap 4.5 CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
@@ -14,7 +13,7 @@
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/108fa96efa.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap 4.5 CSS -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Frequently Asked Questions</title>
@@ -23,8 +22,48 @@
 </head>
 <body>
    
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/ordernow.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item">
+            <a class="nav-link active mr-3" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="AboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="privacy.html">Privacy Policy</a>
+          </li>
+
+          <li class="dropdown">
+            <div>
+              <a href="#" class="nav-link mr-3"><span><i class="fas fa-user text-primary"></i></span></a>
+              <div class="dropdown-content">
+                <a type="button" class="btn text-dark" data-toggle="modal" data-target="#login">Login </a>
+                <a type="button" class="btn text-dark" data-toggle="modal" data-target="#register">Register </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <!-- Question Accordion -->
-    <section id="questions" class="p-5 mb-5 pb-5">
+    <section id="questions" class="p-5 mb-5 pb-5 mt-5">
         <div class="container">
           <h2 class="text-center mb-4">Frequently Asked Questions</h2>
           <div class="accordion accordion-flush" id="questions">
